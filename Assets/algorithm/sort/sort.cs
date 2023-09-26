@@ -39,6 +39,9 @@ public class sort : MonoBehaviour
     //插入排序
     //最好情况的时间复杂度：O(n)
     //最差情况的时间复杂度：O(n^2)
+
+
+    //直接插入	O(n^2)	O(1)	稳定
     void insertSort(int[]array)
     {
         for (int i = 1; i < array.Length; i++)
@@ -61,6 +64,10 @@ public class sort : MonoBehaviour
 
     //冒泡排序
     //时间复杂度O(n^2)
+
+
+    
+    //冒泡排序 O(n^2)  O(1)    稳定
     void bubbleSort(int[] array)
     {
         for (int i = 0; i < array.Length; i++)
@@ -81,6 +88,9 @@ public class sort : MonoBehaviour
     //简单选择排序
     //最好情况的时间复杂度：O(n)
     //最差情况的时间复杂度：O(n^2)
+
+
+    //简单选择 O(n^2)  O(1)    不稳定
     void selectSort(int[] array)
     {
         for (int i=0;i<array.Length;i++) 
@@ -104,6 +114,9 @@ public class sort : MonoBehaviour
     //希尔排序
     //最好情况的时间复杂度：O(n)
     //最差情况的时间复杂度：O(n^1.3)
+
+
+    //希尔排序 O(n^2)  O(1)    不稳定
     void shellSort(int[] array)
     {
         int gap = array.Length;
@@ -139,6 +152,9 @@ public class sort : MonoBehaviour
     //快速排序
     //最好情况的时间复杂度：O(nlog2n)
     //最差情况的时间复杂度：O(n^2)
+
+
+    //快速排序	O(nlgn)	O(nlgn)	不稳定
     void quickSort(int[]array,int begin,int end)
     {
         if (begin > end)
@@ -172,6 +188,9 @@ public class sort : MonoBehaviour
     //堆排序
     //最好情况的时间复杂度：O(nlog2n)
     //最差情况的时间复杂度：O(nlog2n)
+
+
+    //堆排序		O(nlgn)	O(1)	不稳定
     void heapSort(int []array)
     {
         createBigHeap(array);
@@ -217,6 +236,9 @@ public class sort : MonoBehaviour
     //归并排序
     //最好情况的时间复杂度：O(nlog2n)
     //最差情况的时间复杂度：O(nlog2n)
+
+
+    //归并排序	O(nlgn)	O(n)	稳定
     void mergeSort(int[]array,int left,int right)
     {
         if (left >= right)
