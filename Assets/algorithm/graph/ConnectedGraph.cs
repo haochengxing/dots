@@ -1,6 +1,19 @@
 using System;
 using UnityEngine;
 
+/*
+ 函数int Toplogical(Linded WDipaph G)的功能是对图G中的顶点进行拓扑排序，并返回关键路径的长度。
+ 其中图G表示一个具有n个顶点的AOE-网，图中顶点从1～n依次编号，图G的存储结构采用邻接表表示，其数据类型定义如下：
+
+ AOE(Activity On Edge network)网，是一种赋权的有向无环图。
+ 对AOE网进行拓扑排序的方法如下：
+ ①在AOE网中选择一个入度为0(没有前驱)的顶点且输出它。
+ ②从网中删除该顶点及其与该顶点有关的所有边。
+ ③重复上述两步，直至网中不存在入度为0的顶点为止。
+
+ https://easylearn.baidu.com/edu-page/tiangong/bgkdetail?id=762f9cefb8f67c1cfad6b8c9
+ */
+
 public class Gnode
 {
     /* 邻接表的表结点类型 */
